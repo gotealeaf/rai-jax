@@ -1,0 +1,6 @@
+- @tasks.each do |task|
+  %ul
+    %li= link_to task.description, task
+    %li= task.deadline
+
+= link_to 'New Task', new_task_path

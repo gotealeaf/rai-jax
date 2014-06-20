@@ -1,0 +1,14 @@
+*.swp
+*~
+
+/.bundle
+/log/*.log
+/tmp
+/public
+.secret
+.env
+Procfile
+
+/db/*.sqlite3
+/db/*.sqlite3-journal
+database.yml
