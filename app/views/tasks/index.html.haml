@@ -1,6 +1,12 @@
-- @tasks.each do |task|
-  %ul
-    %li= link_to task.description, task
-    %li= task.deadline
+.row
+  .col-md-5.col-md-offset-1
+    %h2 Tasks
+  .col-md-2.col-md-offset-4
+    = link_to new_task_path, remote: true do
+      %button.btn.btn-default New
 
-= link_to 'New Task', new_task_path
+.row
+  .col-md-6.col-md-offset-2#task-form{ style: 'display:none;' }
+
+.row
+  .col-md-7.col-md-offset-1#tasks= render @tasks
