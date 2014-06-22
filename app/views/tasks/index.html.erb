@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-5 col-md-offset-1">
+    <h2>Tasks</h2>
+  </div>
+
+  <div class="col-md-2 col-md-offset-4">
+    <%= link_to new_task_path, remote: true do %>
+      <button class="btn btn-default">New</button>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-2" id="task-form" style="display:none;"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-7 col-md-offset-1" id="tasks"><%= render @tasks %></div>
+</div>

@@ -1,0 +1,5 @@
+<%= simple_form_for @task, remote: true do |f|   %>
+  <%= f.input  :description, as: :text           %>
+  <%= f.input  :deadline,    as: :datetimepicker %>
+  <%= f.button :submit %>
+<% end %>
