@@ -1,2 +1,4 @@
-$('#task-form').html("<%= escape_javascript(render 'form') %>");
+$('#task-form').html("<%= j (render 'form') %>");
 $('#task-form').slideDown(350);
+
+<%= render 'datetimepicker' %>

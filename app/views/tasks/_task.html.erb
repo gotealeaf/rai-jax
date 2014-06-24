@@ -10,7 +10,8 @@
   </span>
 
   <span class="edit">
-    <%= link_to task, remote: true, method: :delete,  data: { confirm: 'Are you sure?' } do %>
+    <%= link_to task, remote: true, method: :delete,
+        data: { confirm: 'Are you sure?' } do %>
       <button class="btn btn-danger btn-xs">Delete!</button>
     <% end %>
   </span>
